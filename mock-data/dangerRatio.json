@@ -1,0 +1,113 @@
+{
+    "count": 184721,
+    "children": [
+        {
+            "count": 173900,
+            "children": [
+                {
+                    "count": 169663,
+                    "children": [
+                        {
+                            "count": 143400,
+                            "children": [
+                                {
+                                    "count": 66383,
+                                    "ratio": 0.463,
+                                    "name": "No-InJured"
+                                },
+                                {
+                                    "count": 48332,
+                                    "ratio": 0.337,
+                                    "name": "Unknow"
+                                },
+                                {
+                                    "count": 28536,
+                                    "ratio": 0.199,
+                                    "name": "Minor-Injured"
+                                },
+                                {
+                                    "count": 149,
+                                    "ratio": 0.001,
+                                    "name": "Fatality"
+                                }
+                            ],
+                            "ratio": 0.845,
+                            "name": "Hit"
+                        },
+                        {
+                            "count": 26263,
+                            "children": [
+                                {
+                                    "count": 24841,
+                                    "ratio": 0.946,
+                                    "name": "No-Injured"
+                                },
+                                {
+                                    "count": 1422,
+                                    "ratio": 0.054,
+                                    "name": "Injured"
+                                }
+                            ],
+                            "ratio": 0.155,
+                            "name": "HitnRun"
+                        }
+                    ],
+                    "ratio": 0.976,
+                    "name": "Collision"
+                },
+                {
+                    "count": 4237,
+                    "children": [
+                        {
+                            "count": 1448,
+                            "ratio": 0.342,
+                            "name": "Wrong-Way-Driver"
+                        },
+                        {
+                            "count": 1435,
+                            "ratio": 0.339,
+                            "name": "Object-Flying-From-Vehicle"
+                        },
+                        {
+                            "count": 1354,
+                            "ratio": 0.32,
+                            "name": "Defective-Signal"
+                        }
+                    ],
+                    "ratio": 0.024,
+                    "name": "Others"
+                }
+            ],
+            "ratio": 0.941,
+            "name": "Human"
+        },
+        {
+            "count": 10821,
+            "children": [
+                {
+                    "count": 2434,
+                    "ratio": 0.225,
+                    "name": "Road-Kill"
+                },
+                {
+                    "count": 7417,
+                    "ratio": 0.685,
+                    "name": "Fire"
+                },
+                {
+                    "count": 791,
+                    "ratio": 0.073,
+                    "name": "Flood"
+                },
+                {
+                    "count": 179,
+                    "ratio": 0.017,
+                    "name": "Wind"
+                }
+            ],
+            "ratio": 0.059,
+            "name": "Nature"
+        }
+    ],
+    "name": "All"
+}

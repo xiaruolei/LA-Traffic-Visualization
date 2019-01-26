@@ -1,0 +1,54 @@
+<div class="container-fluid .text-secondary font-weight-bold border bg-light text-aligh:center my-padding" >
+  <h2>Danger Area Map</h2>
+  <li>This map aims to visaulize geometric distribution of freeway collisions happend in 2017, Los Angeles.</li>
+  <li>Collisions are clustered by nearest intersected local road as red dot.</li>
+  <li>The larger the red dot means the more dangerous section. </li>
+  <li>To see the actual collsion count within 2017, please mouse on to the red dot. Our tooltips will show further details.</li>
+  <li>We also provide zoom option and map styles to feet user of different concern.</li>
+  <li>Users could also play with the dot filter with collision count and road attribute.</li>
+</div>
+<!--div class="container-fluid .text-secondary font-weight-bold border bg-light text-aligh:center">
+  <br>
+  <h2> Interactive Introduction </h2>
+  <li>Select different road, and also you could change the style of map</li>
+  <li>Select the count, filter the data</li>
+  <li>Mouse over on point of map, tooltip will show</li>
+  <br>
+  </div-->
+<div class="selection-row my-padding">
+  <mat-form-field>
+    <mat-select placeholder="Zoom" [(value)]="zoom" (selectionChange)="rerenderMap($event)">
+      <mat-option *ngFor ="let zopt of zoomOptions" [value]='zopt.value'>
+        {{zopt.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select placeholder="Style" [(value)]="mapStyle" (selectionChange)="rerenderMap($event)">
+      <mat-option *ngFor ="let sopt of styleOptions" [value]='sopt.value'>
+        {{sopt.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select placeholder="Collision Count" [(value)]="countFilter" (selectionChange)="updateMap($event)">
+      <mat-option *ngFor ="let copt of countOptions" [value]='copt.value'>
+        {{copt.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  
+  <mat-form-field>
+    <mat-select placeholder="Road" [(value)]="roadFilter" (selectionChange)="updateMap($event)">
+      <mat-option *ngFor ="let ropt of roadOptions" [value]='ropt.value'>
+        {{ropt.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+</div>
+
+<div id="map-div">
+</div>

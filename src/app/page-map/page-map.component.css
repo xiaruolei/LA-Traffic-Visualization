@@ -1,0 +1,8 @@
+.selection-row{
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.selection-row mat-form-field{
+    margin-right: 8px;
+    margin-left: 8px;
+}

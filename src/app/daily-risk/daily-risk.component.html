@@ -1,0 +1,22 @@
+<div class="container-fluid .text-secondary font-weight-bold border bg-light text-aligh:center my-padding">
+  <h2>Daily Risk</h2>
+  <li>This line chart describes, in the year of 2017, number of collisions happened at each hour of day and freeway.</li>
+  <li>Select Catagories which will give you chart of <a>InterState</a> and <a>IntraState.</a></li>
+  <li>Clicking labels of line could show/hide lines.</li>
+  <li>Hovering on labels or lines, the corresponding lines will pop out.</li>
+  <li>Select guild Line button, then you could use the assistant to compare line at specific hour of day.</li>
+  <li>Click the Guild Line button agian could disable the guild line assistant.</li>
+  </div>
+<div class="selection-row ">
+  <br>
+  <mat-form-field style="margin-left:20px">
+    <mat-select placeholder="Category" [(value)]="category" (selectionChange)="reRenderChart($event)">
+      <mat-option *ngFor ="let copt of categoryOptions" [value]='copt.value'>
+        {{copt.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button type="button" class="btn btn-outline-dark" id="guide_line_button">Guide Line</button>
+</div>
+
+<div id="daily-risk-div"></div>

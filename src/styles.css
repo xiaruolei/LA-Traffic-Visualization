@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body{
+    padding:0;
+    margin:0;
+}
+
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+
+.my-padding {
+    padding: 15px;
+}
